@@ -31,7 +31,7 @@ def get_logs():
 parser = argparse.ArgumentParser(description="Ayush Shrivastava Insta Msg Sender")
 parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 5000)),
                     help="Port number (default: 5000)")
-args = parser.parse_args()
+args = parser.parse_args([])
 PORT = args.port
 
 # ---------- HTML Template ----------
